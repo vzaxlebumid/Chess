@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шахматы — индивидуальные занятия | Частный преподаватель шахмат</title>
+  <meta name="description" content="Индивидуальные занятия по шахматам для начинающих и опытных игроков. Персональная программа, анализ партий, тактика и стратегия. Пробное занятие — запишитесь.">
+  <meta property="og:title" content="Шахматы — искусство думать на несколько ходов вперёд">
+  <meta property="og:description" content="Индивидуальные занятия по шахматам для начинающих и опытных игроков.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%99%9E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================= ШАПКА ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="На главную">
+        <span class="logo-mark" aria-hidden="true">♞</span>
+        <span class="logo-text" data-cfg="coachName">Имя преподавателя</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#about">О преподавателе</a>
+        <a href="#programs">Программы</a>
+        <a href="#board">Доска</a>
+        <a href="#pricing">Цены</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#contact" class="nav-cta">Записаться</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= ГЕРОЙ ======================= -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="hero-eyebrow">Частный преподаватель шахмат</p>
+          <h1>Шахматы — это искусство думать на&nbsp;несколько ходов вперёд</h1>
+          <p class="hero-subtitle">Индивидуальные занятия по шахматам для начинающих и опытных игроков. Развивайте стратегическое мышление, учитесь видеть комбинации и побеждать осознанно.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-gold">Записаться на занятие</a>
+            <a href="#programs" class="btn btn-outline">Программа обучения</a>
+          </div>
+          <ul class="hero-points">
+            <li>Индивидуальная программа под ваш уровень</li>
+            <li>Онлайн и очно — на ваш выбор</li>
+            <li>Анализ ваших партий и домашние задания</li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-board-wrap">
+            <div class="hero-board" id="heroBoard"></div>
+            <div class="hero-badge">
+              <span class="hero-badge-title">Индивидуальный подход</span>
+              <span class="hero-badge-sub">от первых ходов до турнирной практики</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">листайте вниз</div>
+    </section>
+
+    <!-- ======================= О ПРЕПОДАВАТЕЛЕ ======================= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">О преподавателе</span>
+          <h2>Ваш проводник в&nbsp;мире шахмат</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <div class="photo-placeholder">
+                <span class="photo-glyph" aria-hidden="true">♞</span>
+                <span class="photo-label">Фотография преподавателя</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-body reveal">
+            <p class="lead">Меня зовут <strong data-cfg="coachName">Имя преподавателя</strong>, и я помогаю людям полюбить шахматы — глубоко, осознанно и надолго. Мой принцип прост: шахматы невозможно выучить наизусть, их можно только понять.</p>
+            <p>На занятиях мы разбираем позиции, а не зубрим дебютные линии. Я учу видеть логику доски: почему фигура стоит именно здесь, какой план сильнее и где прячется тактика. Такое понимание остаётся с вами в каждой партии — и в шахматах, и за пределами доски: стратегическое мышление работает везде.</p>
+            <p>Каждый ученик получает индивидуальный маршрут: под ваш уровень, темп и цели. Кто-то готовится к турниру, кто-то играет с внуками, а кто-то открывает для себя шахматы с нуля. Всем им — свой путь и моя полная вовлечённость.</p>
+            <dl class="profile-list">
+              <div class="profile-row"><dt>Имя преподавателя</dt><dd data-cfg="coachName">Имя преподавателя</dd></div>
+              <div class="profile-row"><dt>Рейтинг FIDE</dt><dd data-cfg="fideRating">Укажите рейтинг, если есть</dd></div>
+              <div class="profile-row"><dt>Опыт преподавания</dt><dd data-cfg="experience">Например: более 5 лет</dd></div>
+              <div class="profile-row"><dt>Формат занятий</dt><dd data-cfg="lessonFormat">Онлайн / очно</dd></div>
+              <div class="profile-row"><dt>Языки преподавания</dt><dd data-cfg="languages">Русский</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ПРОГРАММЫ ======================= -->
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Программы обучения</span>
+          <h2>Программа под ваш уровень</h2>
+          <p class="section-sub">Три уровня — от первых шагов до турнирной подготовки. На пробном занятии определим ваш уровень и подберём программу.</p>
+        </div>
+        <div class="cards-grid three">
+          <article class="program-card reveal">
+            <div class="card-glyph" aria-hidden="true">♙</div>
+            <h3>Начинающий</h3>
+            <p class="card-desc">Для тех, кто делает первые шаги на доске: от правил до первых осознанных побед.</p>
+            <ul class="card-list">
+              <li>Правила игры и основы шахмат</li>
+              <li>Шахматная нотация</li>
+              <li>Мат в один и два хода</li>
+              <li>Основные тактические приёмы</li>
+            </ul>
+            <a href="#contact" class="btn btn-card" data-level="Начинающий">Выбрать программу</a>
+          </article>
+          <article class="program-card reveal">
+            <div class="card-glyph" aria-hidden="true">♘</div>
+            <h3>Продолжающий</h3>
+            <p class="card-desc">Для игроков, которые знают правила и хотят играть сильнее и увереннее.</p>
+            <ul class="card-list">
+              <li>Тактика и комбинационное зрение</li>
+              <li>Дебютные принципы</li>
+              <li>Стратегия и позиционная игра</li>
+              <li>Типичные ошибки и их исправление</li>
+            </ul>
+            <a href="#contact" class="btn btn-card" data-level="Продолжающий">Выбрать программу</a>
+          </article>
+          <article class="program-card reveal">
+            <div class="card-glyph" aria-hidden="true">♜</div>
+            <h3>Продвинутый</h3>
+            <p class="card-desc">Для опытных игроков: глубина анализа, репертуар и турнирный результат.</p>
+            <ul class="card-list">
+              <li>Глубокий анализ позиций</li>
+              <li>Репертуар дебютов</li>
+              <li>Расчёт вариантов</li>
+              <li>Эндшпиль и турнирная подготовка</li>
+            </ul>
+            <a href="#contact" class="btn btn-card" data-level="Продвинутый">Выбрать программу</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ЛЕГЕНДЫ ======================= -->
+    <section class="section legends" id="legends">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Доска почёта</span>
+          <h2>Те, кому ещё не&nbsp;удалось меня победить</h2>
+          <p class="section-sub">Выдающиеся шахматисты планеты. Все они пока не оставили мне ни одного очка.</p>
+        </div>
+        <ol class="legend-board reveal">
+          <li class="legend-row rank-1"><span class="legend-rank">1</span><span class="legend-mono">МК</span><div class="legend-info"><strong>Магнус Карлсен</strong><span>Чемпион мира · не смог победить ни разу</span></div><span class="legend-status">0 поражений у автора сайта</span></li>
+          <li class="legend-row rank-2"><span class="legend-rank">2</span><span class="legend-mono">ХН</span><div class="legend-info"><strong>Хикару Накамура</strong><span>Гроссмейстер · не ответил на мой вызов</span></div><span class="legend-status">в очереди на партию</span></li>
+          <li class="legend-row rank-3"><span class="legend-rank">3</span><span class="legend-mono">ФК</span><div class="legend-info"><strong>Фабиано Каруана</strong><span>Претендент на титул · обходит мою доску стороной</span></div><span class="legend-status">0 попыток</span></li>
+          <li class="legend-row"><span class="legend-rank">4</span><span class="legend-mono">ДЛ</span><div class="legend-info"><strong>Дин Лижэнь</strong><span>Гроссмейстер · продолжает избегать встречи</span></div><span class="legend-status">в очереди на партию</span></li>
+          <li class="legend-row"><span class="legend-rank">5</span><span class="legend-mono">АФ</span><div class="legend-info"><strong>Алиреза Фируджа</strong><span>Юный гений · пока не рискует</span></div><span class="legend-status">в очереди на партию</span></li>
+          <li class="legend-row"><span class="legend-rank">6</span><span class="legend-mono">ГК</span><div class="legend-info"><strong>Гарри Каспаров</strong><span>13-й чемпион мира · ушёл из шахмат раньше, чем встретил меня</span></div><span class="legend-status">счёт 0:0</span></li>
+          <li class="legend-row"><span class="legend-rank">7</span><span class="legend-mono">БФ</span><div class="legend-info"><strong>Бобби Фишер</strong><span>Величайший американец · исторически не успел</span></div><span class="legend-status">счёт 0:0</span></li>
+        </ol>
+        <p class="legend-caption reveal">Разумеется, это шуточный список. С настоящими легендами шахмат всё немного сложнее!</p>
+      </div>
+    </section>
+
+    <!-- ======================= КАК ПРОХОДЯТ ЗАНЯТИЯ ======================= -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Как проходят занятия</span>
+          <h2>Четыре шага к&nbsp;уверенной игре</h2>
+        </div>
+        <ol class="steps-grid">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Знакомство</h3>
+            <p>Определяем ваш уровень, цели и то, что мешает играть сильнее.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Индивидуальный план</h3>
+            <p>Подбираем программу обучения под ваши задачи и темп.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Практика</h3>
+            <p>Разбираем партии, решаем задачи и тренируемся в игре.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Анализ прогресса</h3>
+            <p>Отслеживаем результаты и корректируем программу.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= ИНТЕРАКТИВНАЯ ДОСКА ======================= -->
+    <section class="section board-section" id="board">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Потренируйтесь</span>
+          <h2>Шахматная доска</h2>
+          <p class="section-sub">Играйте за белых и чёрных прямо на сайте: все ходы проверяются по правилам шахмат.</p>
+        </div>
+        <div class="board-layout reveal">
+          <div class="board-main">
+            <div class="board-frame">
+              <div class="chessboard" id="chessboard" role="grid" aria-label="Интерактивная шахматная доска"></div>
+              <div class="promotion-modal" id="promotionModal" role="dialog" aria-modal="true" aria-label="Выбор фигуры для превращения пешки" hidden>
+                <p>Превращение пешки</p>
+                <div class="promotion-choices" id="promotionChoices"></div>
+              </div>
+            </div>
+          </div>
+          <aside class="board-side">
+            <div class="board-status" id="boardStatus" aria-live="polite">Ход белых</div>
+            <div class="board-controls">
+              <button class="btn btn-small" id="btnUndo" type="button">Отменить ход</button>
+              <button class="btn btn-small" id="btnReset" type="button">Сбросить позицию</button>
+              <button class="btn btn-small" id="btnFlip" type="button">Перевернуть доску</button>
+            </div>
+            <div class="captured-box">
+              <div class="captured-row"><span class="captured-label">У белых пленены:</span><span class="captured-pieces" id="capturedByWhite"></span></div>
+              <div class="captured-row"><span class="captured-label">У чёрных пленены:</span><span class="captured-pieces" id="capturedByBlack"></span></div>
+            </div>
+            <div class="move-list-wrap">
+              <h3>Ходы партии</h3>
+              <ol class="move-list" id="moveList"><li class="move-empty">Ходов пока нет</li></ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ЦЕНЫ ======================= -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Стоимость</span>
+          <h2>Цены на занятия</h2>
+          <p class="section-sub">Стоимость указана в узбекских сумах (UZS). Точные цены уточняйте при записи.</p>
+        </div>
+        <div class="cards-grid three pricing-grid">
+          <article class="price-card reveal">
+            <h3>Пробное занятие</h3>
+            <p class="price-desc">Знакомство, определение уровня и план обучения.</p>
+            <p class="price"><span data-cfg="priceTrial">— сум</span></p>
+            <ul class="card-list">
+              <li>Длительность — 45–60 минут</li>
+              <li>Определение уровня игры</li>
+              <li>Персональные рекомендации</li>
+            </ul>
+            <a href="#contact" class="btn btn-card" data-plan="Пробное занятие">Записаться</a>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="featured-badge">Рекомендуем</span>
+            <h3>Пакет занятий</h3>
+            <p class="price-desc">Системные занятия с домашними заданиями и анализом прогресса.</p>
+            <p class="price"><span data-cfg="pricePack">— сум</span></p>
+            <ul class="card-list">
+              <li>Выгоднее, чем разовые занятия</li>
+              <li>Индивидуальная программа</li>
+              <li>Домашние задания и разбор партий</li>
+            </ul>
+            <a href="#contact" class="btn btn-gold" data-plan="Пакет занятий">Записаться</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Индивидуальное занятие</h3>
+            <p class="price-desc">Разовое занятие по вашему уровню и целям.</p>
+            <p class="price"><span data-cfg="priceSingle">— сум</span></p>
+            <ul class="card-list">
+              <li>Длительность — 60 минут</li>
+              <li>Полностью индивидуальный формат</li>
+              <li>Онлайн или очно</li>
+            </ul>
+            <a href="#contact" class="btn btn-card" data-plan="Индивидуальное занятие">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ОТЗЫВЫ ======================= -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Отзывы</span>
+          <h2>Что говорят ученики</h2>
+        </div>
+        <div class="demo-note reveal">Материалы этого раздела — демонстрационные: здесь появятся реальные отзывы учеников.</div>
+        <div class="cards-grid three">
+          <blockquote class="review-card reveal">
+            <p class="review-text">«Пример текста отзыва: расскажите, как изменилась ваша игра, что понравилось в занятиях и какой результат вы получили.»</p>
+            <footer><strong>Имя ученика</strong><span>Уровень · например, начинающий</span></footer>
+          </blockquote>
+          <blockquote class="review-card reveal">
+            <p class="review-text">«Второй пример отзыва: здесь может быть история подготовки к турниру, рост рейтинга или первые победы над сильными соперниками.»</p>
+            <footer><strong>Имя ученика</strong><span>Уровень · например, продолжающий</span></footer>
+          </blockquote>
+          <blockquote class="review-card reveal">
+            <p class="review-text">«Третий пример отзыва: пара слов о формате занятий, атмосфере и том, что особенно помогло в обучении.»</p>
+            <footer><strong>Имя ученика</strong><span>Уровень · например, продвинутый</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ЗАПИСЬ ======================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Запись</span>
+          <h2>Записаться на занятие</h2>
+          <p class="section-sub">Заполните форму — я свяжусь с вами, отвечу на вопросы и подберём удобное время.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="booking-form reveal" id="bookingForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fName">Имя <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="fName" name="name" autocomplete="name" placeholder="Как к вам обращаться">
+                <span class="field-error" id="errName"></span>
+              </div>
+              <div class="form-field">
+                <label for="fAge">Возраст ученика <span class="req" aria-hidden="true">*</span></label>
+                <input type="number" id="fAge" name="age" min="4" max="100" inputmode="numeric" placeholder="Например: 10">
+                <span class="field-error" id="errAge"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fLevel">Текущий уровень игры</label>
+                <select id="fLevel" name="level">
+                  <option value="Не знаю свой уровень" selected>Не знаю свой уровень</option>
+                  <option value="Начинающий">Начинающий</option>
+                  <option value="Продолжающий">Продолжающий</option>
+                  <option value="Продвинутый">Продвинутый</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="fFormat">Желаемый формат занятий</label>
+                <select id="fFormat" name="format">
+                  <option value="Онлайн" selected>Онлайн</option>
+                  <option value="Очно">Очно</option>
+                  <option value="Гибрид">Гибрид</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fTime">Удобное время</label>
+                <input type="text" id="fTime" name="time" placeholder="Например: будни после 18:00, выходные">
+              </div>
+              <div class="form-field">
+                <label for="fContact">Контакт для связи <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="fContact" name="contact" autocomplete="tel" placeholder="Телефон или ник в Telegram">
+                <span class="field-error" id="errContact"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fComment">Комментарий (необязательно)</label>
+              <textarea id="fComment" name="comment" rows="3" placeholder="Цели, пожелания, вопросы…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-submit" id="btnSubmit">
+              <span class="btn-submit-label">Отправить заявку</span>
+              <span class="btn-submit-spinner" aria-hidden="true"></span>
+            </button>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+          <aside class="contact-aside reveal">
+            <h3>Свяжитесь со мной напрямую</h3>
+            <p>Предпочитаете мессенджеры? Напишите — отвечу быстрее, чем ход конём на f3.</p>
+            <a class="contact-link" id="telegramLink" href="#" target="_blank" rel="noopener">
+              <span class="contact-ico" aria-hidden="true">✈</span> Написать в Telegram
+            </a>
+            <a class="contact-link" id="whatsappLink" href="#" target="_blank" rel="noopener">
+              <span class="contact-ico" aria-hidden="true">✆</span> Написать в WhatsApp
+            </a>
+            <div class="contact-note">
+              <strong>Что будет дальше?</strong>
+              <ol>
+                <li>Обсудим ваши цели и уровень.</li>
+                <li>Договоримся о времени пробного занятия.</li>
+                <li>Начнём учиться — спокойно и с удовольствием.</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= ПОДВАЛ ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">♞</span>
+        <p class="footer-name" data-cfg="coachName">Имя преподавателя</p>
+        <p class="footer-tag">Частный преподаватель шахмат</p>
+      </div>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#about">О преподавателе</a>
+        <a href="#programs">Программы</a>
+        <a href="#board">Доска</a>
+        <a href="#pricing">Цены</a>
+        <a href="#contact">Запись</a>
+      </nav>
+      <div class="footer-contacts">
+        <p>Контакты: <span data-cfg="contactInfo">укажите телефон или e-mail</span></p>
+        <div class="footer-social">
+          <a id="telegramLinkFooter" href="#" target="_blank" rel="noopener">Telegram</a>
+          <a id="whatsappLinkFooter" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> <span data-cfg="coachName">Имя преподавателя</span>. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/chess-engine.js"></script>
+  <script src="js/pieces.js"></script>
+  <script src="js/chessboard-ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
